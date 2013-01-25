@@ -25,5 +25,6 @@ case "$1" in
     if [ -f $CHANGELOG ]; then cat $CHANGELOG >> $tmp; fi
     cp $tmp $CHANGELOG
     test -n "$EDITOR" && $EDITOR $CHANGELOG
+    exit 0
     ;;
 esac
